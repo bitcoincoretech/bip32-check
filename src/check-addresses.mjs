@@ -18,6 +18,10 @@ const chain = "0" // 0 - external, 1 - change
 
 const payment = {
     "44'": payments.p2pkh,
+    "49'": (p, o) => {
+        const segwit = payments.p2wpkh(p, o)
+        return payments.p2sh({ redeem: { output: segwit.output } })
+    },
     "84'": payments.p2wpkh,
     // "86'": payments.p2tr
 }
