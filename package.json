@@ -1,0 +1,25 @@
+{
+  "name": "bip32-check",
+  "version": "1.0.0",
+  "description": "Check bip32 derived addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcoincoretech/bip32-check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitcoincoretech/bip32-check/issues"
+  },
+  "homepage": "https://github.com/bitcoincoretech/bip32-check#readme",
+  "dependencies": {
+    "bip32": "^3.0.1",
+    "bip39": "^3.0.4",
+    "bitcoinjs-lib": "^6.0.1",
+    "tiny-secp256k1": "^2.2.1"
+  }
+}
